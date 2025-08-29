@@ -1,4 +1,4 @@
-# JavaScript DOM & Events Cheat Sheet
+# JavaScript DOM & Events
 
 ## 1. Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll
 
