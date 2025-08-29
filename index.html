@@ -23,7 +23,7 @@
         <!-- Navbar -->
         <div class="bg-white">
             <div
-                class="flex w-full max-w-[91.666667%] mx-auto justify-between items-center md:h-[100px] py-4 px-2 sm:px-0">
+                class="flex w-full max-w-[90%] mx-auto justify-between items-center md:h-[100px] py-4 px-2 sm:px-0">
                 <div class="flex items-center gap-2 sm:gap-3">
                     <img class="w-10 sm:w-12 md:w-[60px]" src="./assets/logo.png" alt="Logo">
                     <h1 class="text-[#006747] font-bold text-lg sm:text-xl md:text-2xl">Emergency<br>Service</h1>
@@ -31,7 +31,7 @@
                 <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5">
                     <div
                         class="flex items-center justify-center w-[100px] sm:w-[110px] md:w-[123px] bg-[#cafcd5] gap-2 sm:gap-3 p-2 sm:p-3 rounded-full">
-                        <h1 class="font-bold text-sm sm:text-base">0</h1>
+                        <h1 id="heart-count" class="font-bold text-sm sm:text-base">0</h1>
                         <img class="w-5 sm:w-6 md:w-7" src="./assets/heart.png" alt="Heart">
                     </div>
                     <div
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Emergency Contacts -->
-        <div class="w-full max-w-[91.666667%] mx-auto py-[48px] px-2 sm:px-0">
+        <div class="w-full max-w-[90%] mx-auto py-[48px] px-2 sm:px-0">
             <div class="grid grid-cols-12 gap-4">
                 <!-- Contact List -->
                 <div class="col-span-12 md:col-span-9">
@@ -69,7 +69,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/emergency.png" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">National Emergency Number</h1>
@@ -95,7 +96,8 @@
                         <div class="bg-white border rounded-lg p-4">
                             <div class="flex items-center justify-between">
                                 <img src="./assets/police.png" alt="Emergency Icon" class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Police Helpline Number</h1>
@@ -122,7 +124,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/fire-service.png" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Fire Service Number</h1>
@@ -149,7 +152,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/ambulance.png" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Ambulance Service</h1>
@@ -176,7 +180,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/women and child.jpeg" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Women & Child Helpline</h1>
@@ -203,7 +208,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/anti-corruption.png" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Anti-Corruption Helpline</h1>
@@ -230,7 +236,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/electricity.jpg" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Electricity Helpline</h1>
@@ -256,7 +263,8 @@
                         <div class="bg-white border rounded-lg p-4">
                             <div class="flex items-center justify-between">
                                 <img src="./assets/brac.png" alt="Emergency Icon" class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Brac Helpline</h1>
@@ -283,7 +291,8 @@
                             <div class="flex items-center justify-between">
                                 <img src="./assets/Bangladesh-Railway.png" alt="Emergency Icon"
                                     class="w-10 sm:w-12 h-10 sm:h-12">
-                                <i class="fa-regular fa-heart text-lg"></i>
+                                <i class="fa-regular fa-heart text-lg heart-icon"></i>
+
                             </div>
                             <div class="mt-2">
                                 <h1 class="text-lg font-bold">Bangladesh Railway Helpline </h1>
