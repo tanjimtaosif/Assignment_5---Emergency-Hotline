@@ -58,3 +58,8 @@ function addToCallHistory(serviceName, serviceNumber) {
     callHistoryList.appendChild(li);
 }
 
+// CLEAR HISTORY BUTTON
+clearHistoryBtn.addEventListener('click', () => {
+    callHistoryList.innerHTML = '';
+});
+
