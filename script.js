@@ -16,9 +16,7 @@ heartIcons.forEach(icon => {
     });
 });
 
-// ================================
 // CALL BUTTON FEATURE
-// ================================
 const coinCountEl = document.getElementById('coin-count');
 const callButtons = document.querySelectorAll('.call-btn');
 const callHistoryList = document.getElementById('call-history');
@@ -45,9 +43,8 @@ callButtons.forEach(button => {
     });
 });
 
-// ================================
+
 // ADD TO CALL HISTORY
-// ================================
 function addToCallHistory(serviceName, serviceNumber) {
     const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
@@ -61,32 +58,3 @@ function addToCallHistory(serviceName, serviceNumber) {
     callHistoryList.appendChild(li);
 }
 
-// ================================
-// CLEAR HISTORY BUTTON
-// ================================
-clearHistoryBtn.addEventListener('click', () => {
-    callHistoryList.innerHTML = '';
-});
-
-// ================================
-// COPY BUTTON FEATURE
-// ================================
-const copyButtons = document.querySelectorAll('.copy-btn');
-const copyCountEl = document.getElementById('copy-count');
-let copyCount = parseInt(copyCountEl.textContent) || 0;
-
-copyButtons.forEach(button => {
-    button.addEventListener('click', function () {
-        const card = this.closest('.bg-white.border');
-        const hotlineNumber = card.querySelector('h1.text-xl').textContent;
-
-        // Copy number to clipboard
-        navigator.clipboard.writeText(hotlineNumber).then(() => {
-            alert(`Hotline number ${hotlineNumber} copied to clipboard!`);
-
-            // Increase copy count
-            copyCount++;
-            copyCountEl.textContent = copyCount;
-        });
-    });
-});
