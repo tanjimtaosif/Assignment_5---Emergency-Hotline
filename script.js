@@ -63,3 +63,23 @@ clearHistoryBtn.addEventListener('click', () => {
     callHistoryList.innerHTML = '';
 });
 
+// COPY BUTTON FEATURE
+const copyButtons = document.querySelectorAll('.copy-btn');
+const copyCountEl = document.getElementById('copy-count');
+let copyCount = parseInt(copyCountEl.textContent) || 0;
+
+copyButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const card = this.closest('.bg-white.border');
+        const hotlineNumber = card.querySelector('h1.text-xl').textContent;
+
+        // Copy number to clipboard
+        navigator.clipboard.writeText(hotlineNumber).then(() => {
+            alert(`Hotline number ${hotlineNumber} copied to clipboard!`);
+
+            // Increase copy count
+            copyCount++;
+            copyCountEl.textContent = copyCount;
+        });
+    });
+});
