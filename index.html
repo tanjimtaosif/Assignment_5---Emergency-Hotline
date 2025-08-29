@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Emergency Hotline | Home</title>
 </head>
+
 <body>
+    <div class="container-main">
+        <!-- Navbar Starts -->
+        <div class="flex w-full max-w-7xl mx-auto border-2 justify-between items-center p-4 sm:p-6 md:h-[100px]">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <img class="w-10 sm:w-12 md:w-15" src="./assets/logo.png" alt="Logo">
+                <h1 class="text-[#006747] font-bold text-lg sm:text-xl md:text-2xl">Emergency <br
+                        class="md:hidden">Service</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5">
+                <div
+                    class="flex items-center justify-center w-[100px] sm:w-[110px] md:w-[123px] bg-[#cafcd5] gap-2 sm:gap-3 p-2 sm:p-3 rounded-full">
+                    <h1 class="font-bold text-sm sm:text-base">0</h1>
+                    <img class="w-5 sm:w-6 md:w-7" src="./assets/heart.png" alt="Heart">
+                </div>
+                <div
+                    class="flex items-center justify-center w-[100px] sm:w-[110px] md:w-[123px] bg-[#cafcd5] gap-2 sm:gap-3 p-2 sm:p-3 rounded-full">
+                    <h1 class="font-bold text-sm sm:text-base">100</h1>
+                    <img class="w-5 sm:w-6 md:w-7" src="./assets/coin.png" alt="Coin">
+                </div>
+                <div
+                    class="flex items-center justify-center w-[100px] sm:w-[110px] md:w-[123px] bg-[#00A63E] gap-2 sm:gap-3 p-2 sm:p-3 rounded-full">
+                    <h1 class="font-semibold text-white text-sm sm:text-base"><span>0</span> Copy</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
