@@ -38,13 +38,4 @@ document.body.appendChild(newEl);             // insert into DOM
 - `preventDefault()`: default action blocked, parent listeners still fire.
 - `stopPropagation()`: parent listeners blocked, default action may still occur.
 
-## Quick Summary Table
-
-| Topic | Insight |
-|-------|---------|
-| Selectors | Single: `getElementById`, `querySelector`. Multiple: `getElementsByClassName` (live), `querySelectorAll` (static) |
-| Create & Insert Element | `createElement()`, set properties, `appendChild()` to insert |
-| Event Bubbling | Event flows **upwards** from target through parents |
-| Event Delegation | One parent listener handles events from multiple children |
-| preventDefault() vs stopPropagation() | `preventDefault()`: stops default action; `stopPropagation()`: stops bubbling |
 
